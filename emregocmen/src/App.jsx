@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 
+import img1 from '../src/img/egps.jpg'
+
 const Slider = () => {
   const slideRef = useRef(null);
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -20,29 +22,23 @@ const Slider = () => {
   const data = [
     {
       id: 1,
-      imgUrl: "https://yunti.files.wordpress.com/2016/09/manzara_08_tam35-blogspot-com.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "YAŞA SEV",
+      imgUrl: img1 ,
+      desc: "Hello I'm Emre Gocmen. You can click on the link to learn more about me and access the courses I've completed and certificates. ",
+      name: "ABOUT ME",
     },
     {
       id: 2,
       imgUrl:
         "https://yunti.files.wordpress.com/2016/02/manzara_06_tam35-blogspot-com.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "KORU SEV",
+      desc: "You can check and examine my projects in more detail from the link below.",
+      name: "PROJECTS",
     },
     {
       id: 3,
       imgUrl:
         "https://e0.pxfuel.com/wallpapers/940/790/desktop-wallpaper-high-quality-scenery-full-scenery-tree-scenery-beautiful-scenery-morning-scenery.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "DEVAM SEV",
-    },
-    {
-      id: 5,
-      imgUrl: "https://yunti.files.wordpress.com/2016/09/manzara_13_tam35-blogspot-com.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "SEVMEYİ SEV",
+      desc: "You can click on the link below to send a message or reach my social media accounts.",
+      name: "CONTACT",
     },
     
   ];
@@ -60,7 +56,7 @@ const Slider = () => {
             <div className="content">
               <div className="name">{item.name}</div>
               <div className="des">{item.desc}</div>
-              <button>See more</button>
+              <button>DAHA FAZLA</button>
             </div>
           </div>
         ))}
