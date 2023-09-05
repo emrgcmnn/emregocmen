@@ -61,14 +61,15 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="buttons">
-        <button id="prev" onClick={handleClickPrev}>
+      <div className="buttons text-center mt-4 md:mt-8">
+        <button id="prev" onClick={handleClickPrev} className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center mb-2 md:mb-0 md:mr-4">
           <FontAwesomeIcon icon={faAngleLeft} />
         </button>
-        <button id="next" onClick={handleClickNext}>
+        <button id="next" onClick={handleClickNext} className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center ml-2 md:ml-4">
           <FontAwesomeIcon icon={faAngleRight} />
         </button>
       </div>
+
     </div>
   );
 };

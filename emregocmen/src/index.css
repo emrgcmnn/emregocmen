@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -127,20 +131,12 @@ body {
   background-color: #bac383;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .item:nth-child(3) {
     display: none;
   }
 
-  .item .content {
-    display: block;
-    text-align: center; /* Yazıları ve düğmeleri yatayda ortalar */
-  }
 
-  .item button {
-    opacity: 1;
-    margin: 20px auto; /* Düğmeyi dikeyde ortalar */
-  }
 }
 
 
