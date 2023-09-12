@@ -1,14 +1,11 @@
-import Under from "./Components/Undermenu"
+import Slider from "./Components/Undermenu";
+
 
 function App() {
   return (
     <>
       
-      <Under/>
-
-
-
-     
+      <Slider/>
        </>
     
   );

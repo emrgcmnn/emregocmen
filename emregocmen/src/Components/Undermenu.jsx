@@ -19,6 +19,7 @@ const Slider = () => {
   const handleClickPrev = () => {
     let items = slideRef.current.querySelectorAll(".item");
     slideRef.current.prepend(items[items.length - 1]);
+    console.log(slideRef.current);
   };
 
   const data = [
